@@ -16,6 +16,12 @@ a {
 color: inherit;
 
 }
+h4 {
+text-align: center;
+height: 20px;
+border: none;
+cursor: pointer;
+}
 
 > div {
 display: grid;
