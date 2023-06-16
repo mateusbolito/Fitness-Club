@@ -21,5 +21,5 @@ os equipamentos da academia Fitness Club, nesse projeto foram usados TypeScript,
 
 # Link do App para conferir ⭐
 
-+ https://fitness-club-gmtg.vercel.app/
++ https://fitness-club-uaco.vercel.app/
 
