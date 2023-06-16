@@ -11,6 +11,21 @@ import styled from "styled-components";
  transition: all .40s ease;
  margin-top: 1.8rem;
 
+
+ @media (max-width: 1250px) {
+    header {
+        width: 1000px;
+        
+    }
+
+    @media (max-width: 1024px) {
+      header {
+        width: 700px;
+      }
+    }
+   
+    
+}
  `  
 
  export const ListContainer = styled.a`
@@ -64,4 +79,3 @@ import styled from "styled-components";
 
 
  `
- 

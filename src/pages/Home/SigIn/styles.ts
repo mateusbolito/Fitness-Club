@@ -33,17 +33,16 @@ height: 48px;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background: #000;
+background: transparent;
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 border-radius: 5px;
-border:1px solid rgba(255, 255, 255, 0.18);
-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 margin-top: 1rem;
+border: 1px solid ${({theme})=> theme.colors["base-grenn"]};
 
 
 button:hover {
-color: #1a5baf;
+color: ${({theme})=> theme.colors["base-grenn"]};
 }
 
 span {
@@ -61,14 +60,19 @@ align-items: center;
 justify-content: center;
 background: transparent;
 border: none;
-color: ${({theme})=> theme.colors["base-white"]};
+color: ${({theme})=> theme.colors["base-background"]};
 font-size: 17px;
 font-weight: 400;
-
+gap: 10px;
 
 svg {
 margin-right: 10px;
+width: 10px;
 }
+}
+
+img {
+width: 30px;
 }
 
 }

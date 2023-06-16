@@ -82,7 +82,10 @@ export function PlanoBackPage() {
               <img src={smart2} alt="" />
               <CardGym>
                 <div>
-                  <h3>Cuiaba </h3>
+                  {cities.map((cities) => (
+                    <h3 key={cities.id}>{cities.nome} </h3>
+                  ))}
+
                   <p>rua dois quadra j</p>
                   <a href="https://www.smartfit.com.br/academias/rua-da-consolacao-ii">
                     Ver Academia
