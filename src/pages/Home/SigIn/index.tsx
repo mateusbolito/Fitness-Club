@@ -3,28 +3,7 @@ import google from "../../../assets/google.svg";
 import hub from "../../../assets/hub.png";
 import rocket from "../../../assets/rocket.svg";
 
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-import { app } from "../../../services/firebaseConfig";
-
-export const provider = new GoogleAuthProvider();
-
 export function SigInPage() {
-  const auth = getAuth(app);
-  const SignInGoogle = () => {
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential?.accessToken;
-        const user = result.user;
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        const email = error.customData.email;
-        const credential = GoogleAuthProvider.credentialFromError(error);
-      });
-  };
-
   return (
     <ContainerContent>
       <h2>Fazer Login</h2>
@@ -37,7 +16,7 @@ export function SigInPage() {
       </FormContent>
       <FormContent>
         <span>
-          <button onClick={SignInGoogle}>
+          <button>
             <img src={google} alt="" /> Entrar com o Google
           </button>
         </span>
