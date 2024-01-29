@@ -1,7 +1,6 @@
- 
- import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
- export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
  *{
  margin: 0;
  padding: 0;
@@ -19,11 +18,11 @@ scroll-behavior: smooth;
     width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-    background: ${({theme})=> theme.colors["base-grenn"]};
+    background: ${({ theme }) => theme.colors["base-grenn"]};
     border-radius: 5px;
 }
  body {
-  background: ${({theme})=> theme.colors["base-white2"]};
+  background: ${({ theme }) => theme.colors["base-white2"]};
  -webkit-font-smoothing: antialiased;
  } 
  body, input, textarea, button {
@@ -37,5 +36,4 @@ scroll-behavior: smooth;
  a {
      text-decoration: none;
  }
- `; 
- 
+ `;
